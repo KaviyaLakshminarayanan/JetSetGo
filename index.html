@@ -1,11 +1,328 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JetSetGo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+  </head>
+
+ <!--svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke-width="1.5"
+    stroke="currentColor"
+    class="size-6"
+  >
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z"
+    />
+  </svg>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke-width="1.5"
+    stroke="currentColor"
+    class="size-6"
+  >
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      d="m4.5 12.75 6 6 9-13.5"
+    />
+  </svg>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke-width="1.5"
+    stroke="currentColor"
+    class="size-6"
+  >
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+    />
+  </svg>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke-width="1.5"
+    stroke="currentColor"
+    class="size-6"
+  >
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z"
+    />
+  </svg>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke-width="1.5"
+    stroke="currentColor"
+    class="size-6"
+  >
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      d="M7.217 10.907a2.25 2.25 0 1 0 0 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186 9.566-5.314m-9.566 7.5 9.566 5.314m0 0a2.25 2.25 0 1 0 3.935 2.186 2.25 2.25 0 0 0-3.935-2.186Zm0-12.814a2.25 2.25 0 1 0 3.933-2.185 2.25 2.25 0 0 0-3.933 2.185Z"
+    />
+  </svg>
+  <i class="fa-solid fa-star"></i>
+
+  <i class="fa-solid fa-arrow-down"></i>
+  <i class="fa-regular fa-credit-card"></i>
+
+  <i class="fa-regular fa-star"></i>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke-width="1.5"
+    stroke="currentColor"
+    class="size-6"
+  >
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+    />
+  </svg>
+  <i class="fa-solid fa-circle-info"></i>
+  <i class="fa-solid fa-headset"></i>
+
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke-width="1.5"
+    stroke="currentColor"
+    class="size-6"
+  >
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z"
+    />
+  </svg>
+
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke-width="1.5"
+    stroke="currentColor"
+    class="size-6"
+  >
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      d="m20.893 13.393-1.135-1.135a2.252 2.252 0 0 1-.421-.585l-1.08-2.16a.414.414 0 0 0-.663-.107.827.827 0 0 1-.812.21l-1.273-.363a.89.89 0 0 0-.738 1.595l.587.39c.59.395.674 1.23.172 1.732l-.2.2c-.212.212-.33.498-.33.796v.41c0 .409-.11.809-.32 1.158l-1.315 2.191a2.11 2.11 0 0 1-1.81 1.025 1.055 1.055 0 0 1-1.055-1.055v-1.172c0-.92-.56-1.747-1.414-2.089l-.655-.261a2.25 2.25 0 0 1-1.383-2.46l.007-.042a2.25 2.25 0 0 1 .29-.787l.09-.15a2.25 2.25 0 0 1 2.37-1.048l1.178.236a1.125 1.125 0 0 0 1.302-.795l.208-.73a1.125 1.125 0 0 0-.578-1.315l-.665-.332-.091.091a2.25 2.25 0 0 1-1.591.659h-.18c-.249 0-.487.1-.662.274a.931.931 0 0 1-1.458-1.137l1.411-2.353a2.25 2.25 0 0 0 .286-.76m11.928 9.869A9 9 0 0 0 8.965 3.525m11.928 9.868A9 9 0 1 1 8.965 3.525"
+    />
+  </svg>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke-width="1.5"
+    stroke="currentColor"
+    class="size-6"
+  >
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+    />
+  </svg>
+  <i class="fa-solid fa-less-than"></i>
+  <i class="fa-solid fa-greater-than"></i> -->
+  
+  <body class="box-border">
+    <nav class="nav container mt-4">
+      <ul class="flex justify-around">
+        <div class="nav-items flex gap-8">
+          <a href="" class="font-bold">JetSetGo</a>
+          <li><a href="">Destination</a></li>
+          <li><a href="">Activities</a></li>
+          <li><a href="">Specials</a></li>
+          <a href="" class="content-center"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></a>
+        </div>
+        <div class="log flex gap-8">
+          <li><a href="">Login</a></li>
+          <button href="" class="blue-button">Sign up</button>
+        </div>
+      </ul>
+    </nav>
+    <header class="header">
+      <div class="hero-img relative mt-6">
+        <img src="./images/Church.jpg" alt="" srcset="" />
+      </div>
+      <div class="img-detail bg-white rounded justify-around items-center absolute p-8 flex shadow-lg ">
+        <div class="Location p-1">
+          <h6><b>Location</b></h6>
+          <article class="destination flex gap-2 justify-around">
+            <p>Enter Your destination</p>
+            <svg 
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+              />
+            </svg>
+          </article>
+        </div>
+        <div class="Activity p-1 ">
+          <h6><b>Activity</b></h6>
+          <article class="destination gap-2 flex justify-around">
+            <p>Bungee jump</p>
+            
+            <i class="fa-solid fa-bullseye"></i>
+          </article>
+        </div>
+        <div class="Date p-1">
+          <h6><b>Date</b></h6>
+          <article class="destination gap-2 flex justify-around">
+            <p>Enter Your destination</p>
+  <i class="fa-regular fa-calendar"></i>
+          </>
+        </div>
+        <article class="search blue-button p-3 rounded">
+          <i class="fa-solid fa-magnifying-glass"></i
+          >
+        </article>
+        </div>
+      </div>
+    </header>
+    <section class="category">
+      <h4><b>Select Category</b> </h4>
+      <p>Sost Brilliant reasons Entrada should be your one-stop-shop!</p>
+      <div class="catogories flex gap-3 ">
+        <div class="cards">
+ <div class="card">
+          <div class="rating  px-3 rounded-xl">
+            4.9
+          </div>
+          <div class="card-body">
+            <b>Beach Activity</b>
+            <p>196 Activity</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="rating  px-3 rounded-xl">
+            4.9
+          </div>
+          <div class="card-body">
+            <b>Beach Activity</b>
+            <p>196 Activity</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="rating  px-3 rounded-xl">
+            4.9
+          </div>
+          <div class="card-body">
+            <b>Beach Activity</b>
+            <p>196 Activity</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="rating  px-3 rounded-xl">
+            4.9
+          </div>
+          <div class="card-body">
+            <b>Beach Activity</b>
+            <p>196 Activity</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="rating  px-3 rounded-xl">
+            4.9
+          </div>
+          <div class="card-body">
+            <b>Beach Activity</b>
+            <p>196 Activity</p>
+          </div>
+        </div> 
+        <div class="card">
+          <div class="rating  px-3 rounded-xl">
+            4.9
+          </div>
+          <div class="card-body">
+            <b>Beach Activity</b>
+            <p>196 Activity</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="rating  px-3 rounded-xl">
+            4.9
+          </div>
+          <div class="card-body">
+            <b>Beach Activity</b>
+            <p>196 Activity</p>
+          </div>
+        </div>
+        </div>
+      
+      </div>
+    </section>
+    <section class="top-destinations">
+      <h1>Top Destinations</h1>
+      <p>Sost Brilliant reasons Entrada should be your one-stop-shop!</p>
+      <div class="top-destination">
+        <div class="box1 box" style="grid-area: box1;">
+          <img src="./images/WallOfChina.jpg" alt="">
+        </div>
+        <div class="box2 box" style="grid-area: box2;">
+          <img src="/images//BrokenPlace.jpg" alt="" srcset="">
+        </div>
+        <div class="box3 box" style="grid-area: box3;">
+          <img src="/images/Temple.jpg" alt="" srcset="">
+        </div>
+        <div class="box5 box" style="grid-area: box5;">
+          <div class="box4 box" style="grid-area: box4;">
+            <img src="/images/TajMahal.jpg" alt="" srcset="">
+          </div>
+          <div class="box6" style="grid-area: box6;">
+            <img src="./images/Pyramid.jpg" alt="" srcset="">
+          </div>
+          <div class="box7" style="grid-area: box7;">
+            <img src="./images/Effiel.jpg" alt="" srcset="">
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
 </html>
