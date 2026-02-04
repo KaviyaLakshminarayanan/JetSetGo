@@ -7,8 +7,16 @@
 :root {
   --primary: #20b2aa;
   --gray: gray;
+  --gold:#f59e0b;
+--navy:#1a2b49;
 }
+.card-body img{
+  width: 60px;
+}
+.rating{
+  float: right;
 
+}
 .blue-button {
   padding: 5px 10px;
   background-color: var(--primary);
@@ -64,6 +72,7 @@ header {
   font-size: 13px;
 }
 .card{
+  margin-top: 50px;
     flex: 0 0 20em;
     width: 300px;
     padding: 20px;
@@ -72,14 +81,17 @@ header {
     /* background-color: #20b2aa; */
     height: 12em;
     box-shadow: 0px 0.5px 10px gray;
+    align-content: center;
     
 }
+
 .cards::-webkit-scrollbar{
     display: none;
 }
 .cards{
     bottom: 20px;
     display: flex;
+    height: 300px;
     gap: 20px;
     width: 100%;
     overflow-x: auto;
